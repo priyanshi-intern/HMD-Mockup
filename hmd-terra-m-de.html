@@ -550,6 +550,14 @@
   .stock.out::before { background: #c4262e; }
   .pill.notify { background: #fff; color: #000; border: 2px solid #000; }
   .pill.notify:hover { background: #000; color: #fff; }
+
+  /* Country version switch */
+  .crumbs { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .market { display: inline-flex; border: 1px solid #000; border-radius: 100px; overflow: hidden; font-size: 13px; line-height: 18px; font-weight: 600; }
+  .market a { padding: 6px 14px 5px; text-decoration: none; color: #000; display: flex; align-items: center; gap: 6px; }
+  .market a + a { border-left: 1px solid #000; }
+  .market a[aria-current] { background: #000; color: #fff; }
+  .market a:not([aria-current]):hover { background: #f2f2f2; }
 </style>
 </head>
 <body>
@@ -592,6 +600,7 @@
         <li><a href="feature-phones.html">Einfachtelefone</a> <mark class="confirm">confirm category</mark></li>
         <li aria-current="page">HMD Terra M</li>
       </ol>
+      <div class="market" role="group" aria-label="Länderversion"><a href="hmd-terra-m.html" hreflang="en-GB" lang="en-GB">UK</a><a aria-current="page">Deutschland</a></div>
     </nav>
 
     <section class="buy" id="buy">
